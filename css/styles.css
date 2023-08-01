@@ -74,6 +74,7 @@ h2 {
 }
 
 .global-header .menu-button {
+  color: #212121;
   display: flex;
   background: none;
   border: none;
