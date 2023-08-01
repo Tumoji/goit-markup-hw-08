@@ -55,7 +55,7 @@ h2 {
   display: flex;
   width: 1200px;
   padding: 0 10px;
-  height: 80px;
+  height: 60px;
   justify-content: space-between;
   align-items: center;
 }
@@ -66,27 +66,26 @@ h2 {
   border-bottom: 1px solid #ececec;
 }
 .nav-header {
-  display: flex;
-  align-items: center;
-  flex-grow: 9;
-  padding: 0 100px;
+  display: none;
 }
+
 .header-contacts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  flex-grow: 1;
-  justify-content: space-between;
-  align-items: center;
+  display: none;
 }
-.header-contacts > a {
+
+.global-header .menu-button {
   display: flex;
-  gap: 10px;
+  background: none;
+  border: none;
+  box-shadow: none;
 }
-.header-contacts > a > span {
-  display: flex;
-  align-items: center;
+
+.global-header .menu-button:hover {
+  color: var(--link-color-hover);
+  box-shadow: none;
+  cursor: pointer;
 }
+
 .icon-envelope {
   height: 12px;
   width: 16px;
@@ -823,7 +822,6 @@ footer div .contact.mail {
   gap: 23px;
 }
 
-
 .form-footer {
   display: flex;
   flex-direction: column;
@@ -878,4 +876,45 @@ footer div .contact.mail {
   border-radius: 4px;
   border: 1px solid var(--link-color-hover);
   outline: none;
+}
+
+@media (min-width: 768px) {
+  .global-header {
+    height: 80px;
+  }
+
+  .global-header .menu-button {
+    display: none;
+  }
+
+  .nav-header {
+    display: flex;
+    align-items: center;
+    flex-grow: 9;
+    padding-left: 100px;
+  }
+
+  .header-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 160px;
+  }
+  .header-contacts > a {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-contacts {
+    max-width: none;
+  }
+  .header-contacts > a > span {
+    display: flex;
+    align-items: center;
+  }
 }
