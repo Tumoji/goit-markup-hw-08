@@ -12,6 +12,47 @@
   </head>
 
   <body class="container">
+    <div class="js-menu-container is-open">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div class="menu-drawer-navigation">
+        <nav>
+          <ul class="menu-drawer">
+            <li><a href="index.html" class="active-link link">Studio</a></li>
+            <li><a href="portfolio.html" class="link">Portfolio</a></li>
+            <li><a href="contacts.html" class="link">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="menu-contacts-drawer">
+          <a href="tel:+1212-772-4150" class="link contact phone"
+            >+1 212-772-4150</a
+          >
+          <a href="mailto:info@devstudio.com" class="link contact mail"
+            >info@devstudio.com</a
+          >
+        </div>
+        <div class="menu-social-links">
+          <a href="https://www.instagram.com">Instagram</a>
+          <a href="https://www.twitter.com">Twitter</a>
+          <a href="https://www.facebook.com">Facebook</a>
+          <a href="https://www.linkedin.com">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
     <header class="border-header">
       <div class="global-header">
         <div>
@@ -19,7 +60,7 @@
             ><span class="logo-web">Web</span>Studio</a
           >
         </div>
-        <button class="menu-button">
+        <button class="menu-button js-open-menu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -167,12 +208,28 @@
           <h2>Our Team</h2>
           <ul class="team-box">
             <li class="team-member">
-              <img
-                height="270"
-                width="280"
-                src="images/team_1.jpg"
-                alt="Christopher Walker Product Designer"
-              />
+              <!-- Picture Replacement -->
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width:1200px)"
+                  srcset="images/team_1-d.jpg, images/team_1-d-2x.jpg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="images/team_1-t.jpg, images/team_1-t-2x.jpg"
+                />
+                <!-- Mobile -->
+                <source srcset="images/team_1-m.jpg, images/team_1-m-2x.jpg" />
+                <img
+                  height="270"
+                  width="280"
+                  src="images/team_1.jpg"
+                  alt="Christopher Walker Product Designer"
+                />
+              </picture>
+
               <div class="team-description">
                 <h5>Christopher Walker</h5>
                 <p>Product Designer</p>
@@ -550,5 +607,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
