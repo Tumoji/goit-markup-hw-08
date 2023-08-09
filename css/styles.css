@@ -215,6 +215,7 @@ nav > ul > li > .menu {
 
 .menu-social-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 64px;
 }
@@ -747,7 +748,8 @@ footer div .contact.mail {
   top: 8px;
 }
 
-.close-btn:hover {
+.close-btn:hover,
+.close-btn:focus {
   background: #fff;
   color: #2196f3;
   box-shadow: none;
