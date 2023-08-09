@@ -48,7 +48,7 @@ h2 {
   max-width: 100%;
 }
 .section {
-  margin: 0 0 94px 0;
+  margin: 0 0 60px 0;
 }
 
 .global-header {
@@ -424,10 +424,10 @@ button:focus {
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  padding-left: 10px;
 }
 .list-about {
   display: flex;
+  gap: 30px;
   width: 1200px;
   flex-wrap: wrap;
   justify-content: center;
@@ -437,7 +437,6 @@ button:focus {
 .about-box {
   display: flex;
   flex-direction: column;
-  padding-right: 30px;
 }
 .about-box h4 {
   color: #212121;
@@ -458,7 +457,7 @@ button:focus {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.42px;
-  max-width: 270px;
+  width: 90vw;
   margin: 0;
 }
 .projects {
@@ -650,9 +649,12 @@ footer div .contact.mail {
 }
 .features-icon {
   border-radius: 4px;
+  display: flex;
   background: #f5f4fa;
   padding: 25px 100px;
+  width: 90vw;
   margin-bottom: 30px;
+  justify-content: center;
 }
 
 .features-icon svg {
@@ -1019,6 +1021,14 @@ footer div .contact.mail {
     display: flex;
     gap: 10px;
   }
+
+  .features-icon {
+    max-width: 354px;
+  }
+
+  .about-box p {
+    max-width: 354px;
+  }
   .form-footer-group input {
     width: 450px;
   }
@@ -1036,6 +1046,10 @@ footer div .contact.mail {
     display: flex;
     align-items: center;
   }
+  .section {
+    margin: 0 0 94px 0;
+  }
+
 
   h1 {
     color: #fff;
@@ -1062,6 +1076,12 @@ footer div .contact.mail {
 
   .hero-container {
     height: 600px;
+  }
+  .features-icon {
+    max-width: 270px;
+  }
+  .about-box p {
+    max-width: 270px;
   }
   .form-footer {
     padding-top: 72px;
