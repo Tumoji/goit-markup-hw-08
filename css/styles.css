@@ -554,12 +554,13 @@ button:focus {
 .footer-adress {
   display: flex;
   flex-direction: column;
-  padding: 60px 0 60px 10px;
+  padding: 60px 0 0 10px;
+  align-items: center;
 }
 .footer-social-links {
   display: flex;
   flex-direction: column;
-  padding: 72px 20px 60px 20px;
+  padding: 72px 20px 0 20px;
 }
 .footer-social-links h4 {
   color: #fff;
@@ -570,6 +571,7 @@ button:focus {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin: 0;
+  text-align: center;
 }
 address {
   color: #fff;
@@ -709,6 +711,7 @@ footer div .contact.mail {
   align-items: center;
   transition: transform 200ms ease;
   pointer-events: auto;
+  padding: 20px;
 }
 
 .modal-content {
@@ -719,7 +722,7 @@ footer div .contact.mail {
   width: 50%;
   margin: 0 auto;
   width: 528px;
-  height: 581px;
+  height: 620px;
   position: relative;
 }
 
@@ -925,7 +928,8 @@ footer div .contact.mail {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  align-items: center;
+  padding-top: 60px;
+
 }
 
 .form-footer-group {
@@ -970,6 +974,7 @@ footer div .contact.mail {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .form-footer-group input:focus,
@@ -1016,6 +1021,10 @@ footer div .contact.mail {
     width: 450px;
   }
 
+  .modal-content {
+    height: 581px;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -1030,14 +1039,31 @@ footer div .contact.mail {
     padding-top: 72px;
     width: 570px;
     align-items: baseline;
+    padding-bottom: 93px;
   }
   .form-footer-group {
     flex-direction: row;
+    padding: 0;
   }
+
+  .form-footer-group input {
+    width: 358px;
+    margin: 0;
+  }
+
+  .footer-adress {
+    align-items: baseline;
+  }
+
+  .footer-social-links h4 {
+    text-align: left;
+  }
+
   .images-section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 1200px;
   }
+
 }
