@@ -12,7 +12,7 @@
   </head>
 
   <body class="container">
-    <div class="js-menu-container is-open">
+    <div class="js-menu-container">
       <button class="menu-toggle js-close-menu">
         <svg
           fill="currentColor"
@@ -29,13 +29,11 @@
         </svg>
       </button>
       <div class="menu-drawer-navigation">
-        <nav>
-          <ul class="menu-drawer">
-            <li><a href="index.html" class="active-link link">Studio</a></li>
-            <li><a href="portfolio.html" class="link">Portfolio</a></li>
-            <li><a href="contacts.html" class="link">Contacts</a></li>
-          </ul>
-        </nav>
+        <ul class="menu-drawer">
+          <li><a href="index.html" class="active-link link">Studio</a></li>
+          <li><a href="portfolio.html" class="link">Portfolio</a></li>
+          <li><a href="contacts.html" class="link">Contacts</a></li>
+        </ul>
         <div class="menu-contacts-drawer">
           <a href="tel:+1212-772-4150" class="link contact phone"
             >+1 212-772-4150</a
@@ -43,12 +41,15 @@
           <a href="mailto:info@devstudio.com" class="link contact mail"
             >info@devstudio.com</a
           >
-        </div>
-        <div class="menu-social-links">
-          <a href="https://www.instagram.com">Instagram</a>
-          <a href="https://www.twitter.com">Twitter</a>
-          <a href="https://www.facebook.com">Facebook</a>
-          <a href="https://www.linkedin.com">LinkedIn</a>
+          <div class="menu-social-links">
+            <a href="https://www.instagram.com">Instagram</a>
+            <div class="vl"></div>
+            <a href="https://www.twitter.com">Twitter</a>
+            <div class="vl"></div>
+            <a href="https://www.facebook.com">Facebook</a>
+            <div class="vl"></div>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+          </div>
         </div>
       </div>
     </div>
@@ -60,7 +61,11 @@
             ><span class="logo-web">Web</span>Studio</a
           >
         </div>
-        <button class="menu-button js-open-menu">
+        <button
+          class="menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -534,7 +539,6 @@
         </form>
       </div>
     </footer>
-
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
         <button class="close-btn" data-modal-close>
