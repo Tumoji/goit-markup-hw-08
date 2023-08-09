@@ -25,12 +25,12 @@ a:visited {
 h1 {
   color: #fff;
   text-align: center;
-  font-size: 44px;
-  line-height: 60px;
+  font-size: 26px;
+  line-height: 42px;
   letter-spacing: 2.64px;
   text-transform: uppercase;
-  padding-top: 200px;
   margin: 0;
+  padding: 0 60px;
 }
 
 h2 {
@@ -249,7 +249,7 @@ ul {
   justify-content: center;
   width: 100%;
   background: linear-gradient(rgba(25, 28, 38, 0.4), rgba(25, 28, 38, 0.8)),
-    url("../images/hero_image.jpg");
+    url("../images/hero_image-m.jpg");
   background-repeat: no-repeat;
   background-color: #2f303a;
   background-position: center;
@@ -260,6 +260,8 @@ ul {
   flex-wrap: wrap;
   width: 700px;
   justify-content: center;
+  height: 400px;
+  align-content: center;
 }
 
 .images-section {
@@ -401,7 +403,6 @@ ul {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   margin-top: 30px;
-  margin-bottom: 200px;
   transition: var(--transition);
 }
 
@@ -931,7 +932,6 @@ footer div .contact.mail {
   flex-direction: column;
   width: 100vw;
   padding-top: 60px;
-
 }
 
 .form-footer-group {
@@ -1026,7 +1026,6 @@ footer div .contact.mail {
   .modal-content {
     height: 581px;
   }
-
 }
 
 @media (min-width: 1200px) {
@@ -1036,6 +1035,33 @@ footer div .contact.mail {
   .header-contacts > a > span {
     display: flex;
     align-items: center;
+  }
+
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 60px;
+  }
+
+  .hero-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(rgba(25, 28, 38, 0.4), rgba(25, 28, 38, 0.8)),
+      url("../images/hero_image.jpg");
+    background-repeat: no-repeat;
+    background-color: #2f303a;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero-container {
+    height: 600px;
   }
   .form-footer {
     padding-top: 72px;
@@ -1067,5 +1093,4 @@ footer div .contact.mail {
     flex-wrap: wrap;
     width: 1200px;
   }
-
 }
