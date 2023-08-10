@@ -499,8 +499,7 @@ button:focus {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  margin: 0%;
-  padding: 0%;
+  max-width: calc(100vw - 30px);
 }
 
 .image-portfolio {
@@ -1030,6 +1029,9 @@ footer div .contact.mail {
   .team-member {
     width: 354px;
   }
+  .image-portfolio {
+    width: 370px;
+  }
   .about-box p {
     max-width: 354px;
   }
@@ -1053,7 +1055,6 @@ footer div .contact.mail {
   .section {
     margin: 0 0 94px 0;
   }
-
 
   h1 {
     color: #fff;
