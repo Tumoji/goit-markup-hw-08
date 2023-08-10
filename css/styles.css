@@ -484,10 +484,11 @@ button:focus {
 .portfolio-buttons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 540px;
+  width: 100%;
+  gap: 8px;
   margin: 0%;
-  padding: 0%;
+  padding: 0 15px;
+  flex-wrap: wrap;
 }
 
 .portfolio-container {
